@@ -4,6 +4,10 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
+import edu.dosw.lab.solid.Category;
+import edu.dosw.lab.solid.Product;
+import edu.dosw.lab.solid.StockObserver;
+
 
 class StockObserverTest {
     
@@ -34,6 +38,6 @@ class StockObserverTest {
         observer.update(product);
 
         assertTrue(observer.wasUpdated(), "El método update debe ser llamado");
-        assertEquals(product, observer.getProductReceived(), "El producto recibido debe coincidir con el enviado");
+        assertEquals(product, observer.getProductReceived());
     }
 }

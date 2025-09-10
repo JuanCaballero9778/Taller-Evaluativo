@@ -1,11 +1,12 @@
 package edu.dosw.lab.testing;
-import edu.dosw.lab.solid.Category;
-import edu.dosw.lab.solid.Product;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 import org.junit.jupiter.api.Test;
+
+import edu.dosw.lab.solid.Category;
+import edu.dosw.lab.solid.Product;
 
 class ProductTest {
     

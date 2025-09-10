@@ -3,6 +3,11 @@ package edu.dosw.lab.testing;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import edu.dosw.lab.solid.Category;
+import edu.dosw.lab.solid.MonitoreoStock;
+import edu.dosw.lab.solid.Product;
+import edu.dosw.lab.solid.StockService;
+
 import java.io.ByteArrayInputStream;
 import java.util.Scanner;
 
@@ -21,7 +26,7 @@ class MonitoreoStockTest {
 
     @Test
     void testAddProductFromInput() {
-        String simulatedInput = "Banano\n1.5\n20\nALIMENTO\n";
+        String simulatedInput = "Banano\n1500\n20\nALIMENTO\n";
         Scanner scanner = new Scanner(new ByteArrayInputStream(simulatedInput.getBytes()));
 
         assertDoesNotThrow(() -> {

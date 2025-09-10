@@ -52,7 +52,7 @@ D -> StockService depende de la interfaz StockObserver, no de implementaciones c
 ![alt text](docs/imagenes/HU.png)
 
 
-**Primer Ciclo TDD para AccountValidator:**
+**Primer Ciclo TDD:**
 
 🔴 Rojo:
 
@@ -71,3 +71,38 @@ D -> StockService depende de la interfaz StockObserver, no de implementaciones c
 ![alt text](docs/imagenes/testStockService.png)
 
 ![alt text](docs/imagenes/testE2E.png)
+
+🟢 Verde:
+
+![alt text](docs/imagenes/Category.png)
+
+![alt text](docs/imagenes/Product.png)
+
+![alt text](docs/imagenes/ProductFactory.png)
+
+![alt text](docs/imagenes/StockObserver.png)
+
+![alt text](docs/imagenes/StockService.png)
+
+![alt text](docs/imagenes/LogAgent.png)
+
+![alt text](docs/imagenes/WarningAgent.png)
+
+![alt text](docs/imagenes/MonitoreoStock.png)
+
+## 💻 Compilación pruebas:
+
+![alt text](docs/imagenes/PruebasCompilacion.png)
+
+## Jira
+
+![alt text](docs/imagenes/JiraVerde.png)
+![alt text](docs/imagenes/JiraVerde1.png)
+
+## Inyección de dependencias:
+
+- Cuando arranque el contenedor (@componer, @service...), busca un objeto administrado por Spring que coincida con este tipo de clase o interfaz y ahi lo inyecta.
+
+![alt text](docs/imagenes/StockService.png)
+
+![alt text](docs/imagenes/MonitoreoStock.png)

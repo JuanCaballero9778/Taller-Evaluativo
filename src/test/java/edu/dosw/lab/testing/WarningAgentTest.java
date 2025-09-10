@@ -7,13 +7,13 @@ import java.io.PrintStream;
 
 import org.junit.jupiter.api.Test;
 
+import edu.dosw.lab.solid.WarningAgent;
 import edu.dosw.lab.solid.Category;
 import edu.dosw.lab.solid.Product;
-import edu.dosw.lab.solid.WarningAgent;
 
 class WarningAgentTest {
     @Test
-    void testShouldPassWithUpdate(){
+    void testShouldPassWithUpdate() {
         ByteArrayOutputStream output = new ByteArrayOutputStream();
         PrintStream originalOut = System.out;
         System.setOut(new PrintStream(output));
