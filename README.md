@@ -17,15 +17,15 @@
 
 - Diagrama de contexto: Nos permite conocer el sistema sin conocer los procesos internos, encontramos como el usuario puede interactuar con el sistema 'Monitoreo de Stock' y a la vez observamos los sistemas de log y warning que permmiten generar mensajes de alerta o de información.
 
-![alt text](docs/imagenes/DiagramaContexto.png)
+![alt text](docs/uml/DiagramaContexto.png)
 
 - Diagrama de conceptos: Aqui podemos observar la estructura que va a tener mas adelante en código y sus relaciones (el problema del Stock), el patron de diseño que se va a utilizar que es el observer (Patrón de comportamiento) ya que nos permite que el objeto de update notifique automáticamente a otros objetos cuando cambia su estado, también se utiliza el factory method (Patrón Creacional) para la creación de objetos que en este caso es de los productos.
 
-![alt text](docs/imagenes/DiagramaDeConceptos.png)
+![alt text](docs/uml/DiagramaDeConceptos.png)
 
 - Diagrama de casos de uso: Podemos observar como el usuario interactua con el sistema y muestra las acciones que puede realizar.
 
-![alt text](docs/imagenes/CasosDeUso.png)
+![alt text](docs/uml/CasosDeUso.png)
 
 
 ## Stock 
@@ -43,3 +43,31 @@ L -> Todas las implementaciones de StockObserver pueden reemplazar la interfaz s
 I -> Ya que utilizamos la interfaz StockObserver que contiene el método update().
 
 D -> StockService depende de la interfaz StockObserver, no de implementaciones concretas.
+
+**Organización del taller en Jira**
+
+![alt text](docs/imagenes/Jira.png)
+
+- HU:
+![alt text](docs/imagenes/HU.png)
+
+
+**Primer Ciclo TDD para AccountValidator:**
+
+🔴 Rojo:
+
+![alt text](docs/imagenes/testWarning.png)
+
+![alt text](docs/imagenes/testProduct.png)
+
+![alt text](docs/imagenes/testLog.png)
+
+![alt text](docs/imagenes/testProductFactory.png)
+
+![alt text](docs/imagenes/testCategory.png)
+
+![alt text](docs/imagenes/testObserver.png)
+
+![alt text](docs/imagenes/testStockService.png)
+
+![alt text](docs/imagenes/testE2E.png)
