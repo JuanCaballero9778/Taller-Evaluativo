@@ -7,7 +7,7 @@
 `feature/TallerEvaluativo_JuanCaballero_2025-2`
 
 ---
-## Pruebas de ejecución (Lab 3 parte 1), parte 1.
+## Pruebas de ejecución "mvn clean compile".
 
 ![alt text](docs/imagenes/pruebaEjecucion.png) 
 
@@ -106,3 +106,29 @@ D -> StockService depende de la interfaz StockObserver, no de implementaciones c
 ![alt text](docs/imagenes/StockService.png)
 
 ![alt text](docs/imagenes/MonitoreoStock.png)
+
+## Cobertura JACOCO
+
+- Aqui encontramos la cobertura y el reporte de jacoco "mvn test".
+
+![alt text](docs/imagenes/JacocoCobertura.png)
+
+![alt text](docs/imagenes/JacocoCobertura1.png)
+
+## Cobertura y reporte SonarQube
+
+- Aqui encontramos el reporte de SonarQube de la cobertura del código "mvn verify sonar:sonar -D sonar.token=sqa_82d59eb660134106374ac9d7b0499..."
+
+![alt text](docs/imagenes/CoberturaSonar.png)
+
+![alt text](docs/imagenes/CompilacionSonar.png)
+
+
+
+
+## Jira finalizado
+
+![alt text](docs/imagenes/JiraFinal.png)
+
+![alt text](docs/imagenes/JiraFinal1.png)
+

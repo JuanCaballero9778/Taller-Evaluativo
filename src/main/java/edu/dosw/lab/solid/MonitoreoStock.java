@@ -2,22 +2,17 @@ package edu.dosw.lab.solid;
 
 
 import org.springframework.boot.CommandLineRunner;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.stereotype.Component;
 
 import java.util.Scanner;
 
-@SpringBootApplication
+@Component
 public class MonitoreoStock implements CommandLineRunner {
 
     private final StockService stockService;
 
     public MonitoreoStock(StockService stockService) {
         this.stockService = stockService;
-    }
-
-    public static void main(String[] args) {
-        SpringApplication.run(MonitoreoStock.class, args);
     }
 
     @Override
@@ -56,7 +51,7 @@ public class MonitoreoStock implements CommandLineRunner {
         System.out.println("¡Gracias por usar el sistema de monitoreo de stock!");
     }
 
-    private void addProduct(Scanner scanner) {
+    public void addProduct(Scanner scanner) {
         System.out.print("Nombre del producto: ");
         String name = scanner.nextLine();
 
@@ -86,7 +81,7 @@ public class MonitoreoStock implements CommandLineRunner {
         System.out.println("Producto agregado correctamente.");
     }
 
-    private void updateStock(Scanner scanner) {
+    public void updateStock(Scanner scanner) {
         System.out.print("Nombre del producto a actualizar: ");
         String name = scanner.nextLine();
 
