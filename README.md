@@ -93,7 +93,7 @@ D -> StockService depende de la interfaz StockObserver, no de implementaciones c
 
 ## 💻 Compilación pruebas:
 
-![alt text](docs/imagenes/PruebasCompilacion.png)
+![alt text](docs/imagenes/pruebasCompilacion.png)
 
 ## Jira
 
