@@ -49,6 +49,7 @@ D -> StockService depende de la interfaz StockObserver, no de implementaciones c
 ![alt text](docs/imagenes/Jira.png)
 
 - HU:
+
 ![alt text](docs/imagenes/HU.png)
 
 
@@ -97,6 +98,7 @@ D -> StockService depende de la interfaz StockObserver, no de implementaciones c
 ## Jira
 
 ![alt text](docs/imagenes/JiraVerde.png)
+
 ![alt text](docs/imagenes/JiraVerde1.png)
 
 ## Inyección de dependencias:
