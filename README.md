@@ -9,7 +9,7 @@
 ---
 ## Pruebas de ejecución "mvn clean compile".
 
-![alt text](docs/imagenes/pruebaEjecucion.png) 
+![alt text](docs/imagenes/PruebaEjecucion.png) 
 
 ---
 
